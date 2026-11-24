@@ -1,0 +1,57 @@
+
+.notifications-page {
+  min-height: 100vh;
+  padding: 40px 6%;
+  background: #f5f7f2;
+  color: #173b2a;
+  font-family: Arial, sans-serif;
+}
+
+.notification-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #347a48;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.notifications-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.notifications-heading h1 {
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.notifications-heading p {
+  color: #718075;
+}
+
+.notification-empty {
+  background: white;
+  border: 1px solid #e1e9df;
+  border-radius: 15px;
+  padding: 65px 25px;
+  text-align: center;
+}
+
+.notification-empty svg {
+  color: #347a48;
+}
+
+.notification-empty h2 {
+  margin: 18px 0 10px;
+}
+
+.notification-empty p {
+  max-width: 450px;
+  margin: auto;
+  color: #718075;
+  line-height: 1.7;
+}

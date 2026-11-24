@@ -1,0 +1,312 @@
+.rp-page {
+  width: 100%;
+  background: #faf8f0;
+  font-family: "Inter", sans-serif;
+}
+
+.rp-page-hero {
+  padding: 100px 7% 70px;
+  text-align: center;
+  background: linear-gradient(135deg, #f0fdf4 0%, #e8f5e9 100%);
+}
+
+.rp-page-hero h1 {
+  font-size: clamp(36px, 5vw, 52px);
+  font-weight: 800;
+  color: #174d35;
+  margin: 14px 0 18px;
+  line-height: 1.2;
+}
+
+.rp-page-hero h1 span {
+  color: #00884a;
+}
+
+.rp-page-hero p {
+  max-width: 560px;
+  margin: 0 auto;
+  color: #5a6b5e;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.rp-section {
+  padding: 80px 7%;
+}
+
+.rp-section-heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.rp-section-heading h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  color: #174d35;
+  margin: 12px 0;
+}
+
+.rp-section-heading h2 span {
+  color: #00884a;
+}
+
+.rp-section-label {
+  color: #087d46;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+/* Benefits */
+.rp-volunteer-benefits {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.rp-benefit-card {
+  background: white;
+  border: 1px solid #e8eee5;
+  border-radius: 18px;
+  padding: 28px 22px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.rp-benefit-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(23, 77, 53, 0.09);
+}
+
+.rp-benefit-card svg {
+  color: #00884a;
+  margin-bottom: 16px;
+}
+
+.rp-benefit-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #174d35;
+  margin-bottom: 8px;
+}
+
+.rp-benefit-card p {
+  font-size: 14px;
+  color: #6b7c6f;
+  line-height: 1.55;
+}
+
+/* Form Layout */
+.rp-form-section {
+  background: #f3f6f2;
+}
+
+.rp-form-container {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+.rp-form-info h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #174d35;
+  margin-bottom: 28px;
+}
+
+.rp-form-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rp-form-step {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.rp-step-num {
+  width: 36px;
+  height: 36px;
+  background: #00884a;
+  color: white;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.rp-form-step strong {
+  display: block;
+  font-size: 16px;
+  color: #174d35;
+  margin-bottom: 4px;
+}
+
+.rp-form-step p {
+  font-size: 14px;
+  color: #6b7c6f;
+  line-height: 1.5;
+}
+
+.rp-form {
+  background: white;
+  border: 1px solid #e8eee5;
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: 0 10px 30px rgba(23, 77, 53, 0.06);
+}
+
+.rp-form h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #174d35;
+  margin-bottom: 22px;
+}
+
+.rp-form-group {
+  margin-bottom: 18px;
+}
+
+.rp-form-group label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 7px;
+}
+
+.rp-form-group input,
+.rp-form-group textarea,
+.rp-form-group select {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color 0.2s;
+  background: white;
+}
+
+.rp-form-group input:focus,
+.rp-form-group textarea:focus,
+.rp-form-group select:focus {
+  border-color: #00884a;
+}
+
+.rp-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.rp-btn-full {
+  width: 100%;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+.rp-form-note {
+  text-align: center;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 14px;
+}
+
+/* Contact specific */
+.rp-contact-desc {
+  font-size: 15px;
+  color: #6b7c6f;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.rp-contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.rp-contact-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.rp-contact-icon {
+  width: 44px;
+  height: 44px;
+  background: #e8f0e5;
+  color: #00884a;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.rp-contact-item strong {
+  display: block;
+  font-size: 15px;
+  color: #174d35;
+  margin-bottom: 3px;
+}
+
+.rp-contact-item p {
+  font-size: 14px;
+  color: #6b7c6f;
+}
+
+/* Success */
+.rp-success {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 7%;
+}
+
+.rp-success h1 {
+  font-size: 36px;
+  color: #174d35;
+  margin: 18px 0 12px;
+}
+
+.rp-success p {
+  color: #6b7c6f;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .rp-volunteer-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rp-form-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .rp-volunteer-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .rp-form-row {
+    grid-template-columns: 1fr;
+  }
+}

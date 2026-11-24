@@ -1,0 +1,484 @@
+
+/* NAVIGATION BAR */
+.rp-navbar {
+  width: 100%;
+  height: 80px;
+  background: #fffefa;
+  border-bottom: 1px solid #e8eee5;
+  position: relative;
+  z-index: 100;
+}
+
+.rp-nav-container {
+  max-width: 1600px;
+  height: 100%;
+  margin: auto;
+  padding: 0 5.5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rp-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #172c20;
+  font-size: 25px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.rp-logo > span:last-child span {
+  color: #00884a;
+}
+
+.rp-logo-icon {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  color: white;
+  background: #00884a;
+  border-radius: 15px;
+}
+
+.rp-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.rp-nav-links a {
+  color: #647064;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.rp-nav-links a:hover,
+.rp-nav-links a.active {
+  color: #00884a;
+}
+
+.rp-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.rp-login-link {
+  color: #172c20;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.rp-nav-donate {
+  padding: 13px 22px;
+  color: white;
+  background: #007d40;
+  border-radius: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.rp-nav-donate:hover {
+  background: #009653;
+  transform: translateY(-2px);
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 850px) {
+  .rp-nav-container {
+    padding: 0 4%;
+  }
+
+  .rp-nav-links {
+    gap: 15px;
+  }
+
+  .rp-nav-links a {
+    font-size: 13px;
+  }
+
+  .rp-nav-actions {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 650px) {
+  .rp-navbar {
+    height: auto;
+    min-height: 75px;
+  }
+
+  .rp-nav-container {
+    flex-wrap: wrap;
+    padding: 12px 5%;
+    gap: 14px;
+  }
+
+  .rp-logo {
+    font-size: 21px;
+  }
+
+  .rp-nav-links {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  .rp-nav-links a {
+    font-size: 12px;
+  }
+
+  .rp-nav-actions {
+    gap: 12px;
+  }
+
+  .rp-nav-donate {
+    padding: 10px 13px;
+    font-size: 13px;
+  }
+
+  .rp-login-link {
+    font-size: 13px;
+  }
+}
+/* HOME */
+.rp-home {
+  width: 100%;
+  overflow: hidden;
+  background: #faf8f0;
+  font-family: "Inter", sans-serif;
+}
+
+/* HERO BACKGROUND */
+.rp-hero {
+  position: relative;
+  width: 100%;
+  min-height: 770px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(2, 17, 8, 0.94) 0%,
+      rgba(2, 17, 8, 0.86) 35%,
+      rgba(2, 17, 8, 0.60) 65%,
+      rgba(2, 17, 8, 0.22) 100%
+    ),
+    url("/ngo-hero.jpg");
+
+  background-size: cover;
+  background-position: center 42%;
+  background-repeat: no-repeat;
+}
+
+/* HERO CONTENT */
+.rp-hero-content {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  padding: 90px 8%;
+  text-align: left !important;
+  color: white;
+}
+
+/* BADGE */
+.rp-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 18px;
+  margin-bottom: 32px;
+  color: white;
+  background: rgba(255, 255, 255, 0.13);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  backdrop-filter: blur(8px);
+}
+
+/* HEADING - POP EFFECT */
+.rp-hero-title {
+  display: block !important;
+  max-width: 780px;
+  margin: 0 !important;
+  padding: 0;
+  color: #ffffff;
+  font-size: clamp(58px, 6.8vw, 96px);
+  font-weight: 900;
+  line-height: 1.04;
+  letter-spacing: -3.8px;
+  text-align: left !important;
+  text-shadow: 0 6px 30px rgba(0, 0, 0, 0.35);
+}
+
+.rp-hero-title span {
+  display: inline-block;
+  color: #88df91;
+  text-shadow: 0 0 30px rgba(136, 223, 145, 0.35);
+  animation: popIn 0.85s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.82) translateY(28px);
+  }
+  70% {
+    transform: scale(1.04) translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* DESCRIPTION */
+.rp-hero-description {
+  display: block !important;
+  width: 100%;
+  max-width: 690px;
+  margin: 30px 0 40px !important;
+  color: #f5f7f4;
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 1.85;
+  text-align: left !important;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* BUTTONS */
+.rp-hero-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 17px;
+  flex-wrap: wrap;
+}
+
+.rp-donate-button,
+.rp-explore-button {
+  min-height: 60px;
+  padding: 0 29px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  border-radius: 15px;
+  font-size: 16px;
+  font-weight: 750;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.rp-donate-button {
+  color: #fff;
+  background: #00884a;
+  box-shadow: 0 8px 25px rgba(0, 136, 74, 0.25);
+}
+
+.rp-donate-button:hover {
+  background: #00a45a;
+  transform: translateY(-4px);
+}
+
+.rp-explore-button {
+  color: white;
+  background: rgba(255, 255, 255, 0.10);
+  border: 1.5px solid rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.rp-explore-button:hover {
+  color: #174d35;
+  background: white;
+  transform: translateY(-4px);
+}
+
+/* TRUST POINTS */
+.rp-hero-features {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 52px;
+}
+
+.rp-hero-features div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.rp-hero-features svg {
+  width: 21px;
+  height: 21px;
+  color: #80e18d;
+  flex-shrink: 0;
+}
+
+/* HOW IT WORKS */
+.rp-how-section {
+  padding: 90px 7%;
+  text-align: center;
+  background: #faf8f0;
+  scroll-margin-top: 90px;
+}
+
+.rp-section-label {
+  color: #087d46;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.rp-how-section h2 {
+  margin: 17px 0;
+  color: #174d35;
+  font-size: clamp(30px, 4vw, 43px);
+}
+
+.rp-how-section h2 span {
+  color: #e99a48;
+}
+
+.rp-how-section > p {
+  max-width: 650px;
+  margin: 0 auto;
+  color: #718074;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* CARDS */
+.rp-how-cards {
+  max-width: 1150px;
+  margin: 50px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.rp-how-card {
+  padding: 35px 25px;
+  background: white;
+  border: 1px solid #e8eee5;
+  border-radius: 18px;
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.rp-how-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(23, 77, 53, 0.10);
+}
+
+.rp-how-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  color: #087d46;
+  background: #e8f0e5;
+  border-radius: 14px;
+}
+
+.rp-how-card h3 {
+  margin: 22px 0 12px;
+  color: #174d35;
+  font-size: 21px;
+}
+
+.rp-how-card p {
+  margin: 0;
+  color: #718074;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* TABLET */
+@media (max-width: 900px) {
+  .rp-hero {
+    min-height: 700px;
+  }
+
+  .rp-hero-content {
+    padding: 80px 6%;
+  }
+
+  .rp-hero-description {
+    max-width: 580px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 650px) {
+  .rp-hero {
+    min-height: 740px;
+    background-position: 58% center;
+    background-image:
+      linear-gradient(
+        rgba(2, 17, 8, 0.78),
+        rgba(2, 17, 8, 0.82)
+      ),
+      url("/ngo-hero.jpg");
+  }
+
+  .rp-hero-content {
+    padding: 65px 7%;
+  }
+
+  .rp-hero-title {
+    font-size: 49px;
+    letter-spacing: -2px;
+  }
+
+  .rp-hero-description {
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 25px 0 30px !important;
+  }
+
+  .rp-hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rp-donate-button,
+  .rp-explore-button {
+    width: 100%;
+  }
+
+  .rp-hero-features {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 17px;
+    margin-top: 35px;
+  }
+
+  .rp-how-section {
+    padding: 65px 6%;
+  }
+
+  .rp-how-cards {
+    grid-template-columns: 1fr;
+  }
+}

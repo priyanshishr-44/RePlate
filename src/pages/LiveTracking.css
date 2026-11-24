@@ -1,0 +1,351 @@
+
+.tracking-page {
+  min-height: 100vh;
+  padding: 35px 5%;
+  background: #f5f8f3;
+  color: #173b2a;
+  font-family: Arial, sans-serif;
+}
+
+.tracking-header {
+  margin-bottom: 25px;
+}
+
+.tracking-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #438653;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tracking-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+
+.tracking-header p,
+.tracking-map-heading p,
+.tracking-section-heading p {
+  color: #718075;
+  font-size: 14px;
+}
+
+/* GPS STATUS */
+
+.tracking-status-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 22px;
+  background: white;
+  border: 1px solid #e1e9df;
+  border-radius: 14px;
+  margin-bottom: 25px;
+}
+
+.tracking-status-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.tracking-live-icon {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #edf2ed;
+  color: #718075;
+}
+
+.tracking-live-icon.online {
+  background: #e0f5e7;
+  color: #078443;
+}
+
+.tracking-status-info h3 {
+  margin: 0 0 6px;
+  font-size: 17px;
+}
+
+.tracking-status-info p {
+  margin: 0;
+  color: #718075;
+  font-size: 13px;
+}
+
+.tracking-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.tracking-start-btn,
+.tracking-stop-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 13px 19px;
+  border: none;
+  border-radius: 9px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tracking-start-btn {
+  background: #087e43;
+}
+
+.tracking-stop-btn {
+  background: #bd4038;
+}
+
+/* MAP SECTION */
+
+.tracking-map-section {
+  padding: 25px;
+  margin-bottom: 25px;
+  background: white;
+  border: 1px solid #e1e9df;
+  border-radius: 15px;
+}
+
+.tracking-map-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.tracking-map-heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 0;
+  font-size: 21px;
+}
+
+.tracking-map-heading p {
+  margin-bottom: 0;
+}
+
+.tracking-map {
+  height: 440px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #e8eee7;
+}
+
+.live-leaflet-map {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.tracking-map-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 400;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: rgba(245, 248, 243, 0.75);
+  pointer-events: none;
+}
+
+.tracking-map-overlay > div {
+  padding: 20px;
+  color: #347a48;
+}
+
+.tracking-map-overlay h3 {
+  color: #173b2a;
+  margin-bottom: 8px;
+}
+
+.tracking-map-overlay p {
+  color: #718075;
+  font-size: 13px;
+}
+
+/* LOCATION DETAILS */
+
+.tracking-location-details {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.tracking-location-item {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  padding: 15px;
+  border-radius: 9px;
+  background: #f5f8f3;
+  min-width: 0;
+}
+
+.tracking-location-item span {
+  color: #718075;
+  font-size: 12px;
+}
+
+.tracking-location-item strong {
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.gps-active {
+  color: #078443;
+}
+
+/* DONATIONS */
+
+.tracking-content {
+  padding: 28px;
+  background: white;
+  border: 1px solid #e1e9df;
+  border-radius: 15px;
+}
+
+.tracking-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.tracking-section-heading h2 {
+  margin: 0;
+  font-size: 21px;
+}
+
+.tracking-refresh,
+.tracking-view-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #347a48;
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tracking-donation-list {
+  display: grid;
+  gap: 15px;
+}
+
+.tracking-donation-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 20px;
+  border: 1px solid #e1e9df;
+  border-radius: 11px;
+}
+
+.tracking-donation-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+}
+
+.tracking-donation-card p {
+  margin: 0 0 12px;
+  color: #718075;
+  font-size: 13px;
+}
+
+.tracking-status {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 20px;
+  background: #edf6ed;
+  color: #347a48;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.tracking-empty {
+  padding: 45px 15px;
+  text-align: center;
+  color: #718075;
+}
+
+.tracking-empty h3 {
+  color: #173b2a;
+}
+
+.tracking-error {
+  display: flex;
+  gap: 10px;
+  padding: 13px;
+  margin-bottom: 18px;
+  background: #fff0ed;
+  color: #b34434;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+  .tracking-location-details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tracking-map {
+    height: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tracking-page {
+    padding: 25px 15px;
+  }
+
+  .tracking-header h1 {
+    font-size: 23px;
+  }
+
+  .tracking-status-panel,
+  .tracking-map-heading,
+  .tracking-section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .tracking-map-section,
+  .tracking-content {
+    padding: 18px;
+  }
+
+  .tracking-map {
+    height: 320px;
+  }
+
+  .tracking-donation-card {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
