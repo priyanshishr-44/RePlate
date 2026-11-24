@@ -1,16 +1,43 @@
-# React + Vite
+# 🍽️ RePlate
+### Rescue Food. Reduce Waste. Replate Hope. ♻️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+RePlate is a Food Surplus Redistribution System designed to reduce food waste by connecting food donors, NGOs, volunteers, and organizations. The platform helps coordinate the collection and redistribution of surplus food to people who need it.
 
-Currently, two official plugins are available:
+## 🌱 About the Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Large quantities of edible food are wasted every day while many people still struggle to access sufficient meals. RePlate aims to bridge this gap by creating a simple and organized system for identifying surplus food, coordinating its collection, and connecting it with NGOs and community organizations for redistribution.
 
-## React Compiler
+## 🎯 Objectives
+- Reduce avoidable food waste.
+- Encourage responsible food donation.
+- Connect food donors with NGOs and organizations.
+- Simplify surplus food collection and redistribution.
+- Encourage community participation and volunteering.
+- Create a sustainable food ecosystem.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features
+- Food surplus donation management.
+- NGO and organization coordination.
+- Volunteer involvement.
+- Food collection and redistribution tracking.
+- Donation status management.
+- Community participation.
+- Impact and activity records.
 
-## Expanding the ESLint configuration
+## 🛠️ Technology Stack
+- React.js
+- Vite
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 👩‍💻 Project Team
+Community Service Project — RePlate
+
+A collaborative team project focused on using technology to address food waste and food accessibility.
+
+## 💡 Vision
+"No good food should go to waste when someone could use it."
+
+**RePlate — Rescue Food. Reduce Waste. Replate Hope. ♻️**
